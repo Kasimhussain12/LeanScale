@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="promotion">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="label" xsi:type="string" translate="true">Promotion</item>
+                <item name="collapsible" xsi:type="boolean">true</item>
+                <item name="sortOrder" xsi:type="number">50</item>
+            </item>
+        </argument>
+        <field name="promotion_title">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">10</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="scopeLabel" xsi:type="string" translate="true">[STORE VIEW]</item>
+                    <item name="label" xsi:type="string" translate="true">Title</item>
+                </item>
+            </argument>
+        </field>
+        <field name="promotion_subtitle">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">20</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="scopeLabel" xsi:type="string" translate="true">[STORE VIEW]</item>
+                    <item name="label" xsi:type="string" translate="true">Subtitle</item>
+                </item>
+            </argument>
+        </field>
+        <field name="promotion_action_url">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">30</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="scopeLabel" xsi:type="string" translate="true">[STORE VIEW]</item>
+                    <item name="label" xsi:type="string" translate="true">Action Url</item>
+                </item>
+            </argument>
+        </field>
+        <field name="promotion_action_title">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">40</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="scopeLabel" xsi:type="string" translate="true">[STORE VIEW]</item>
+                    <item name="label" xsi:type="string" translate="true">Action Title</item>
+                </item>
+            </argument>
+        </field>
+        <field name="promotion_promo_type">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">50</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="scopeLabel" xsi:type="string" translate="true">[STORE VIEW]</item>
+                    <item name="label" xsi:type="string" translate="true">Promo Type</item>
+                </item>
+            </argument>
+        </field>
+        <field name="promotion_bg_color" formElement="colorPicker">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">60</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="componentType" xsi:type="string">colorPicker</item>
+                    <item name="dataScope" xsi:type="string">promotion_bg_color</item>
+                    <item name="scopeLabel" xsi:type="string" translate="true">[STORE VIEW]</item>
+                    <item name="label" xsi:type="string" translate="true">Bg Color</item>
+                </item>
+            </argument>
+            <formElements>
+                <colorPicker>
+                    <settings>
+                        <colorPickerMode>full</colorPickerMode>
+                        <colorFormat>hex</colorFormat>
+                    </settings>
+                </colorPicker>
+            </formElements>
+        </field>
+        <field name="promotion_text_color" formElement="colorPicker">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">70</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="componentType" xsi:type="string">colorPicker</item>
+                    <item name="dataScope" xsi:type="string">promotion_text_color</item>
+                    <item name="scopeLabel" xsi:type="string" translate="true">[STORE VIEW]</item>
+                    <item name="label" xsi:type="string" translate="true">Text Color</item>
+                </item>
+            </argument>
+            <formElements>
+                <colorPicker>
+                    <settings>
+                        <colorPickerMode>full</colorPickerMode>
+                        <colorFormat>hex</colorFormat>
+                    </settings>
+                </colorPicker>
+            </formElements>
+        </field>
+    </fieldset>
+</form>
